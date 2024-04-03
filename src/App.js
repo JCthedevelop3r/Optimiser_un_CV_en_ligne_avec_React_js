@@ -11,7 +11,12 @@ import LegalNoticePage from "./components/Pages/LegalNoticePage";
 function App() {
   return (
     <div className="App">
-      
+      <Link to="/">Accueil</Link>
+      <Link to="/ServicesPage">Services</Link>
+      <Link to="/ProductionsPage">Réalisations</Link>
+      <Link to="/BlogPage">Blog</Link>
+      <Link to="/ContactPage">Contact</Link>
+      <Link to="/LegalNoticePage">Mentions légales</Link>
       <Routes>
         <Route path="/" component={<HomePage/>}></Route>
         <Route path="/ServicesPage" component={<ServicesPage/>}></Route>
