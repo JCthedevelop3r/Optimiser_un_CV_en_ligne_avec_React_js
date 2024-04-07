@@ -1,30 +1,24 @@
 import React from "react";
-import {Route, Routes, Link} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 
-import HomePage from "./components/Pages/HomePage";
+import Header from "./components/Header";
 import ServicesPage from "./components/Pages/ServicesPage";
 import ProductionsPage from "./components/Pages/ProductionsPage";
 import BlogPage from "./components/Pages/BlogPage";
 import ContactPage from "./components/Pages/ContactPage";
-import LegalNoticePage from "./components/Pages/LegalNoticePage";
+import HomePage from "./components/Pages/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <Link to="/">Accueil</Link>
-      <Link to="/ServicesPage">Services</Link>
-      <Link to="/ProductionsPage">Réalisations</Link>
-      <Link to="/BlogPage">Blog</Link>
-      <Link to="/ContactPage">Contact</Link>
-      <Link to="/LegalNoticePage">Mentions légales</Link>
-      <Routes>
-        <Route path="/" component={<HomePage/>}></Route>
-        <Route path="/ServicesPage" component={<ServicesPage/>}></Route>
-        <Route path="/ProductionsPage" component={<ProductionsPage/>}></Route>
-        <Route path="/BlogPage" component={<BlogPage/>}></Route>
-        <Route path="/ContactPage" component={<ContactPage/>}></Route>
-        <Route path="/LegalNoticePage" component={<LegalNoticePage/>}></Route>
-      </Routes>
+      <Header/>
+        <Routes>
+          <Route path="/" element={<HomePage/>}></Route>
+          <Route path="/ServicesPage" element={<ServicesPage/>}></Route>
+          <Route path="/ProductionsPage" element={<ProductionsPage/>}></Route>
+          <Route path="/BlogPage" element={<BlogPage/>}></Route>
+          <Route path="/ContactPage" element={<ContactPage/>}></Route>
+        </Routes>
     </div>
   );
 }

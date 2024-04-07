@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 function FooterElement(props) {
     return(
