@@ -4,8 +4,7 @@ import "./Header.css";
 
 const Header = () => {
     return(
-        <div className="header-component">
-          <header>
+          <header className="container-fluid-md">
             <nav class="navbar fixed-top navbar-expand-lg">
               <div class="container-fluid px-4 text-uppercase">
                 <Link to="/" class="navbar-brand text-white">john doe</Link>
@@ -18,23 +17,22 @@ const Header = () => {
                       <Link to="/" class="nav-link text-white" aria-current="page">accueil</Link>
                     </li>
                     <li class="nav-item">
-                      <Link to="/ServicePage" class="nav-link text-white">services</Link>
+                      <Link to="ServicesPage" class="nav-link text-white" aria-current="page">services</Link>
                     </li>
                     <li class="nav-item">
-                      <Link to="ProductionsPage" class="nav-link text-white">réalisations</Link>
+                      <Link to="ProductionsPage" class="nav-link text-white" aria-current="page">réalisations</Link>
                     </li>
                     <li class="nav-item">
-                      <Link to="BlogPage" class="nav-link text-white">blog</Link>
+                      <Link to="BlogPage" class="nav-link text-white" aria-current="page">blog</Link>
                     </li>
                     <li class="nav-item">
-                      <Link to="ContactPage" class="nav-link text-white">me contacter</Link>
+                      <Link to="ContactPage" class="nav-link text-white" aria-current="page">me contacter</Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </nav>
           </header>
-        </div>
     );
 }
 

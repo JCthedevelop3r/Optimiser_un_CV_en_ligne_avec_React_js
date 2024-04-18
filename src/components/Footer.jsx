@@ -19,9 +19,12 @@ function FooterElement(props) {
                 {/*Permet de créer plusieurs éléments de liste*/}
                 {props.elements.map((element) => (
                     <li key={element.id}>
-                        {/*Permet de choisir où vont s'afficher les icônes à gauche des liens*/}
-                        {props.showIcon && <FontAwesomeIcon icon={faChevronRight} size="xs" style={{color: "#116dfe", paddingRight: "1%"}} />}
-                        <Link to={element.page}>{element.text}</Link>
+                        {/*Permet de rendre l'icône des liens cliquables*/}
+                        <div className="icon-link-container" onClick={() => window.location.href = element.page}>
+                            {/*Permet de choisir où vont s'afficher les icônes à gauche des liens*/}
+                            {props.showIcon && <FontAwesomeIcon icon={faChevronRight} size="xs" style={{color: "#116dfe", paddingRight: "1%"}} />}
+                            <Link to={element.page}>{element.text}</Link>
+                        </div>
                     </li>
                 ))}
             </ul>
@@ -72,8 +75,8 @@ export default function Footer() {
         { text: "Se positionner sur Google", page: "/BlogPage", id: "article-blog-3"},
     ];
     return(
-        <footer>
-            <section className='footer-container pt-5 ps-3 pb-4'>
+        <footer className='container-fluid-md'>
+            <section className='footer-main-content pt-5 ps-3 pb-4'>
                 <FooterElement sousTitre="John Doe" elements={colonne1}></FooterElement>
                 <FooterElement sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
                 <FooterElement sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>

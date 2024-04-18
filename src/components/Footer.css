@@ -19,7 +19,7 @@ a {
     font-weight: 400;
 }
 
-footer .footer-container > div:nth-child(n+2) .social-icons {
+footer .footer-main-content > div:nth-child(n+2) .social-icons {
     display: none;
 }
 

@@ -3,12 +3,12 @@ import {Routes, Route} from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ServicesPage from "./components/Pages/ServicesPage";
-import ProductionsPage from "./components/Pages/ProductionsPage";
-import BlogPage from "./components/Pages/BlogPage";
-import ContactPage from "./components/Pages/ContactPage";
-import LegalNoticePage from "./components/Pages/LegalNoticePage";
-import HomePage from "./components/Pages/HomePage";
+import ServicesPage from "./components/ServicesPage";
+import ProductionsPage from "./components/ProductionsPage";
+import BlogPage from "./components/BlogPage";
+import ContactPage from "./components/ContactPage";
+import LegalNoticePage from "./components/LegalNoticePage";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
