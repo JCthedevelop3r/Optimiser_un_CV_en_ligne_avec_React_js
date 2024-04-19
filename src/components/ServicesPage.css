@@ -1,0 +1,36 @@
+main {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    background-color: #F8F9FB;
+}
+
+.figure-bm {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-mobile {
+    width: 100%; 
+}
+
+.h2-sp {
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.text-intro{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.border {
+    width: 78px;
+    padding-bottom: 100px;
+}
+
+.card-body {
+    padding-bottom: 80px !important;
+}
+
+.underlined {
+    text-decoration: underline dotted;
+}

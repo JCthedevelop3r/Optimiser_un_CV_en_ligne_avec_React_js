@@ -1,3 +1,4 @@
+import "./style.css";
 import "./HomePage.css";
 
 import johnDoeAbout from "../images/img/john-doe-about.jpg"
@@ -8,7 +9,7 @@ export default function HomePage() {
             <div className="bg-image d-flex align-items-center">
                 <section className="presentation text-white text-center">
                     <h1 className="titre mb-4">Bonjour, je suis John Doe</h1>
-                    <h2 className="h2 fs-3 mb-4">Développeur web full stack</h2>
+                    <h2 className="h2-hp fs-3 mb-4">Développeur web full stack</h2>
                     <a href="#a-propos"><button type="button" className="btn btn-primary px-4">En savoir plus</button></a>
                 </section>
             </div>

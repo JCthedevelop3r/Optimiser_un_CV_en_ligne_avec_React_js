@@ -38,7 +38,7 @@
     color: #1e1e1e;
 }
 
-.h2 {
+.h2-hp {
     font-weight: 600 !important;
 }
 
@@ -48,6 +48,7 @@
 
 strong {
     font-weight: 600 !important;
+    color: black !important;
 }
 
 .john-doe-about {
