@@ -1,0 +1,27 @@
+.blog-page {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #F8F9FB;
+}
+
+p {
+    color: #444;
+}
+
+.blue-stroke-bp {
+    width: 76px;
+    padding-bottom: 60px;
+}
+
+.intitule-bp {
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+.description-bp {
+    font-size: 0.9rem;
+}
+
+.card-footer-content-bp {
+    color: #444;
+}

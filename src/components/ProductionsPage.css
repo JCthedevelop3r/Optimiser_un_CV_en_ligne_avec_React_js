@@ -1,0 +1,32 @@
+.productions-page {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #F8F9FB;
+}
+
+p {
+    color:#444;
+}
+
+.text-intro{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.blue-stroke-pp {
+    width: 76px;
+    padding-bottom: 60px;
+}
+
+.intitule-pp {
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+.description-pp {
+    font-size: 0.9rem;
+}
+
+.card-footer-content {
+    color: #444;
+}

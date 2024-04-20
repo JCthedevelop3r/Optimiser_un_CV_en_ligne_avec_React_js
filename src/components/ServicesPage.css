@@ -1,12 +1,11 @@
-main {
+.services-page {
     padding-top: 30px;
     padding-bottom: 90px;
     background-color: #F8F9FB;
 }
 
-.figure-bm {
-    width: 100%;
-    height: 100%;
+p {
+    color:#444;
 }
 
 .banner-mobile {
@@ -22,15 +21,20 @@ main {
     font-size: 1.1rem;
     font-weight: 400;
 }
-.border {
-    width: 78px;
+.blue-stroke-sp {
+    width: 76px;
     padding-bottom: 100px;
 }
 
-.card-body {
+.services-card-content {
     padding-bottom: 80px !important;
+}
+
+.card-title {
+    color: #1e1e1e !important;
 }
 
 .underlined {
     text-decoration: underline dotted;
+    text-decoration-color: #444;
 }

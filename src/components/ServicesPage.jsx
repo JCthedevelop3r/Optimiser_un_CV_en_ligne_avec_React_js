@@ -1,7 +1,7 @@
-import './style.css'
-import './ServicesPage.css'
+import './style.css';
+import './ServicesPage.css';
 
-import bannerMobile from '../images/img/banner-mobile.jpg'
+import bannerMobile from '../images/img/banner-mobile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDisplay } from '@fortawesome/free-solid-svg-icons';
 import { faFileCode } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,7 @@ import { faMagnifyingGlassDollar } from '@fortawesome/free-solid-svg-icons';
 
 function Prestation(props) {
 
-    // Fonction pour entourer les sous-chaînes spécifiées par une balise
+    // Fonction pour entourer les sous-chaînes spécifiées de la prop description par une balise
     function wrapSubstrings(description, substrings, wrapper) {
         return substrings.reduce((acc, substring) => {
             return acc.replace(new RegExp(substring, 'gi'), `<${wrapper}>${substring}</${wrapper}>`);
@@ -27,7 +27,7 @@ function Prestation(props) {
 
     return (
         <section className={props.className}>
-            <div className='card-body d-flex flex-column align-items-center pt-5'>
+            <div className='card-body services-card-content d-flex flex-column align-items-center pt-5'>
                 <FontAwesomeIcon icon={props.icon} size='2xl' style={{color: "#0d6efd",}} />
                 <h3 className='card-title text-uppercase pt-3'>{props.intitulé}</h3>
                 {/* eslint-disable-next-line*/}
@@ -39,14 +39,12 @@ function Prestation(props) {
 
 export default function ServicesPage() {
     return(
-        <main className="container-fluid-md">
-            <section className='introduction text-center d-flex flex-column align-items-center'>
-                <figure className='figure-bm'>
-                        <img className="banner-mobile" src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
-                </figure>
+        <main className="container-fluid-md services-page">
+            <section className='text-center d-flex flex-column align-items-center'>
+                <img className="banner-mobile" src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
                 <h2 className='h2-sp text-uppercase mt-4 fs-1'>Mon offre de services</h2>
                 <p className='text-intro'>Voici les prestations sur lesquelles je peux intervenir.</p>
-                <div className='border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
+                <div className='blue-stroke-sp border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
             </section>
             <section className='Prestations'>
                 <Prestation 
