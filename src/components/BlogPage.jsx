@@ -30,7 +30,7 @@ export default function BlogPage() {
         <main className="container-fluid-md blog-page">
             <section className='text-center d-flex flex-column align-items-center'>
                 <img className='banner-mobile' src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
-                <h2 className='h2-bp text-uppercase mt-4 fs-1'>blog</h2>
+                <h2 className='h2-bp text-uppercase mt-5 fs-1'>blog</h2>
                 <p className='text-intro'>
                     Retrouvez ici quelques articles sur le développement web.
                 </p>

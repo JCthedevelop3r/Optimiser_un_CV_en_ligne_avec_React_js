@@ -42,7 +42,7 @@ export default function ServicesPage() {
         <main className="container-fluid-md services-page">
             <section className='text-center d-flex flex-column align-items-center'>
                 <img className="banner-mobile" src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
-                <h2 className='h2-sp text-uppercase mt-4 fs-1'>Mon offre de services</h2>
+                <h2 className='h2-sp text-uppercase mt-5 fs-1'>Mon offre de services</h2>
                 <p className='text-intro'>Voici les prestations sur lesquelles je peux intervenir.</p>
                 <div className='blue-stroke-sp border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
             </section>

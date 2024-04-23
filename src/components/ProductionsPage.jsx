@@ -27,7 +27,7 @@ export default function ProductionsPage() {
         <main className="container-fluid-md productions-page">
             <section className='text-center d-flex flex-column align-items-center'>
                 <img className='banner-mobile' src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
-                <h2 className='h2-pp text-uppercase mt-4 fs-1'>portfolio</h2>
+                <h2 className='h2-pp text-uppercase mt-5 fs-1'>portfolio</h2>
                 <p className='text-intro'>
                     Voici quelques-unes de mes <br></br>
                     réalisations.
