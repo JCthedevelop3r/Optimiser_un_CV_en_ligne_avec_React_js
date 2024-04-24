@@ -17,13 +17,17 @@ function FooterElement(props) {
             <h2>{props.sousTitre}</h2>
             <ul>
                 {/*Permet de créer plusieurs éléments de liste*/}
-                {props.elements.map((element) => (
+                {props.elements.map((element, index) => (
                     <li key={element.id}>
                         {/*Permet de rendre l'icône des liens cliquables*/}
                         <div className="icon-link-container" onClick={() => window.location.href = element.page}>
                             {/*Permet de choisir où vont s'afficher les icônes à gauche des liens*/}
                             {props.showIcon && <FontAwesomeIcon icon={faChevronRight} size="xs" style={{color: "#116dfe", paddingRight: "1%"}} />}
-                            <Link to={element.page}>{element.text}</Link>
+                            {props.colonne === 1 && index < 3 ? (
+                                <p>{element.text}</p>
+                            ) : (
+                                <Link className={props.className} to={element.page}>{element.text}</Link>
+                            )}
                         </div>
                     </li>
                 ))}
@@ -77,7 +81,7 @@ export default function Footer() {
     return(
         <footer className='container-fluid-md'>
             <section className='footer-main-content pt-5 ps-3 pb-4'>
-                <FooterElement sousTitre="John Doe" elements={colonne1}></FooterElement>
+                <FooterElement sousTitre="John Doe" elements={colonne1} colonne={1}></FooterElement>
                 <FooterElement sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
                 <FooterElement sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>
                 <FooterElement sousTitre="Mes derniers articles" elements={colonne4} showIcon={true}></FooterElement>

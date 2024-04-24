@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './style.css';
 import './ServicesPage.css';
 
@@ -8,6 +9,15 @@ import { faFileCode } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlassDollar } from '@fortawesome/free-solid-svg-icons';
 
 function Prestation(props) {
+    const [isHovered, setIsHovered] = useState(false);
+
+    function handleMouseEnter() {
+        setIsHovered(true);
+    }
+
+    function handleMouseLeave() {
+        setIsHovered(false);
+    }
 
     // Fonction pour entourer les sous-chaînes spécifiées de la prop description par une balise
     function wrapSubstrings(description, substrings, wrapper) {
@@ -26,9 +36,9 @@ function Prestation(props) {
     let descriptionWithSpan = wrapSubstrings(descriptionWithStrong, spanSubstrings, 'span class="underlined"');
 
     return (
-        <section className={props.className}>
+        <section className={props.className} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='card-body services-card-content d-flex flex-column align-items-center pt-5'>
-                <FontAwesomeIcon icon={props.icon} size='2xl' style={{color: "#0d6efd",}} />
+                <FontAwesomeIcon icon={props.icon} size='2xl' style={{ color: isHovered ? "#cde1f8" : "#0d6efd" }}/>
                 <h3 className='card-title text-uppercase pt-3'>{props.intitulé}</h3>
                 {/* eslint-disable-next-line*/}
                 <p className='card-text description text-center' dangerouslySetInnerHTML={{ __html: descriptionWithSpan }}></p>

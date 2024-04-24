@@ -4,9 +4,9 @@ import "./Header.css";
 
 const Header = () => {
     return(
-          <header className="container-fluid-md">
+          <header className="container-fluid">
             <nav class="navbar fixed-top navbar-expand-lg">
-              <div class="container-fluid px-4 text-uppercase">
+              <div class="container-fluid container-fluid-2 text-uppercase">
                 <Link to="/" class="navbar-brand text-white">john doe</Link>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

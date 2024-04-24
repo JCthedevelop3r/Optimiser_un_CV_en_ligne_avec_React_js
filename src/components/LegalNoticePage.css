@@ -1,8 +1,21 @@
 .legal-notice-page {
     padding-top: 64px;
+    background-color: #F8F9FB;
+}
+
+.h2-lnp {
+    color: #1e1e1e;
 }
 
 .blue-stroke-lnp {
     width: 76px;
     padding-bottom: 60px;
+}
+
+h4 {
+    color: #1e1e1e;
+}
+
+p {
+    color: #444;
 }

@@ -13,6 +13,17 @@ ul {
     list-style-type: none;
 }
 
+.footer-elements:nth-child(n+2) ul {
+    margin-left: 0.4rem;
+}
+.footer-elements:first-child .icon-link-container {
+    pointer-events: none;
+}
+
+.icon-link-container p {
+    margin: 0;
+}
+
 a {
     text-decoration: none !important;
     color: var(--bs-cvdark) !important;

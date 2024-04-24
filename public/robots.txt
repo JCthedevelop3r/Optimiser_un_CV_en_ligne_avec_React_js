@@ -1,3 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /LegalNoticePage
+Disallow: https://github.com/github-john-doe
+Disallow: https://twitter.com/JohnDoe1410056
+Disallow: https://www.linkedin.com/in/john-doe-169a69302/

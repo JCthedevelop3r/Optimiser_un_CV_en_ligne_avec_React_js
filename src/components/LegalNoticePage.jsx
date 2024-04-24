@@ -11,14 +11,18 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 export default function LegalNoticePage() {
     useEffect(() => {
         const buttons = document.querySelectorAll('.accordion-button');
-
+        /*
+            Permet de changer la couleur du titre d'un bouton de l'accordéon en #1e1e1e
+            lorsqu'on ferme le bouton et de changer le titre en #0d6efd lorsqu'on
+            ouvre un bouton. 
+        */
         buttons.forEach(button => {
             button.addEventListener('click', () => {
                 const expanded = button.getAttribute('aria-expanded');
                 if (expanded === 'true') {
                     button.style.color = '#0d6efd';
                 } else {
-                    button.style.color = 'black';
+                    button.style.color = '#1e1e1e';
                 }
             });
         });
@@ -30,7 +34,7 @@ export default function LegalNoticePage() {
                     if (expanded === 'true') {
                         button.style.color = '#0d6efd';
                     } else {
-                        button.style.color = 'black';
+                        button.style.color = '#1e1e1e';
                     }
                 });
             });
@@ -43,7 +47,7 @@ export default function LegalNoticePage() {
                 <h2 className="h2-lnp text-uppercase mt-4 fs-1">mentions légales</h2>
                 <div className='blue-stroke-lnp border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
             </section>
-            <div className='accordion mb-4 mx-2' id='chapters'>
+            <div className='accordion pb-4 mx-2' id='chapters'>
                 <div className='accordion-item'>
                     <h3 className='accordion-header' id='heading-1'>
                         <button className='accordion-button' type='button' data-bs-toggle='collapse' 

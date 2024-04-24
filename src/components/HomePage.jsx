@@ -5,8 +5,8 @@ import johnDoeAbout from "../images/img/john-doe-about.jpg"
 
 export default function HomePage() {
     return(
-        <main className="container-fluid-md">
-            <div className="bg-image d-flex align-items-center">
+        <main className="container-fluid-md home-page">
+            <div className="bg-image d-flex justify-content-center align-items-center">
                 <section className="presentation text-white text-center">
                     <h1 className="titre mb-4">Bonjour, je suis John Doe</h1>
                     <h2 className="h2-hp fs-3 mb-4">Développeur web full stack</h2>
