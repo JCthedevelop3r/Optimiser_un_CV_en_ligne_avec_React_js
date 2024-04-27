@@ -2,17 +2,19 @@
     background-color: #F8F9FB;
 }
 
-.bg-image::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-    z-index: 0;
+@media (max-width: 767px) {
+    .bg-image::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: 0;
+    }
 }
 
 .bg-image {
@@ -24,12 +26,39 @@
     z-index: 10;
 }
 
-.bg-image {
-    height: 768px;
-    background-image: url(../images/img/hero-bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+@media (max-width: 767px) {
+    .bg-image {
+        height: 768px;
+        background-image: url(../images/img/hero-bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-image::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-image {
+        height: 1000px;
+        background-image: url(../images/img/hero-bg-tablette.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .titre {
@@ -37,17 +66,59 @@
     font-weight: 600 !important;
 }
 
-.titres{
+.titres {
     font-weight: 600 !important;
     color: #1e1e1e;
 }
 
-.h2-hp {
-    font-weight: 600 !important;
+.titre-a-propos {
+    padding-top: 15px;;
+}
+
+@media (max-width: 767px) {
+    .h2-hp {
+        font-weight: 600 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .h2-hp {
+        font-weight: 600 !important;
+        font-size: calc(1.375rem + 1.5vw) !important;
+    }
 }
 
 .a-propos {
     padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+    .a-propos {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .a-propos > .card {
+        padding: 1.25rem 2rem 3rem 2rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .texte-a-propos {
+        font-size: 1.2rem;
+    }
+}
+
+.competences {
+    font-size: 1.25rem !important;
+}
+
+@media (min-width: 768px) {
+    .competences {
+        font-size: calc(1.3rem + 0.6vw) !important;
+    }
 }
 
 strong {
