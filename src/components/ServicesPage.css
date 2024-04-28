@@ -1,7 +1,15 @@
-.services-page {
-        padding-top: 30px;
-        padding-bottom: 90px;
-        background-color: #F8F9FB;
+    @media (max-width: 767px){
+        .services-page {
+            padding-top: 30px;
+            padding-bottom: 100px;
+            background-color: #F8F9FB;
+        }
+    }
+    @media (min-width: 768px) {
+        .services-page {
+            padding-bottom: 100px;
+            background-color: #F8F9FB;
+        }
     }
     
     p {
@@ -11,10 +19,27 @@
     .banner-mobile {
         width: 100%; 
     }
+
+    @media (min-width: 768px) {
+        .banner-mobile {
+            position: relative;
+            top: -12px;
+        }
+    }
     
-    .h2-sp {
-        font-weight: 600;
-        color: #1e1e1e;
+    @media (max-width: 767px) {
+        .h2-sp {
+            font-weight: 600;
+            color: #1e1e1e;
+            margin-top: 3rem;
+        }
+    }
+    @media (min-width: 768px) {
+        .h2-sp {
+            font-weight: 600;
+            color: #1e1e1e;
+            margin-top: 1.5rem !important;
+        }
     }
     
     .text-intro{
@@ -24,4 +49,11 @@
     .blue-stroke-sp {
         width: 76px;
         padding-bottom: 100px;
+    }
+
+    @media (min-width: 768px) {
+        .blue-stroke-sp {
+            width: 150px;
+            padding-bottom: 100px;
+        }
     }
