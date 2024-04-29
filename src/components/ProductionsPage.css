@@ -1,21 +1,109 @@
-.productions-page {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: #F8F9FB;
+@media (max-width: 767px) {
+    .productions-page {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        background-color: #F8F9FB;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .productions-page {
+        padding-bottom: 50px;
+        background-color: #F8F9FB;
+    }
 }
 
 p {
     color:#444;
 }
 
-.text-intro{
+.text-intro-pp{
     font-size: 1.1rem;
     font-weight: 400;
+    padding: 0 2rem 0 2rem;
 }
 
-.blue-stroke-pp {
-    width: 76px;
-    padding-bottom: 60px;
+@media (max-width: 767px) {
+    .blue-stroke-pp {
+        width: 76px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .blue-stroke-pp {
+        width: 150px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .container-realisations {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .center {
+        width: 92%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 4%;
+    }
+}
+
+@media (max-width: 767px) {
+    .realisations {
+        width: 100%;
+        padding: 0 0.5rem !important;
+        position: relative;
+        left: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .realisations {
+        position: relative;
+        left: 12px;
+        width: 95%;
+        height: 100%;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .realisation-1 {
+        margin: 0 !important;
+        padding: 0 !important
+    }
+
+    .realisation-2 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .realisation-3 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .realisation-1 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .realisation-2 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .realisation-3 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
 
 .intitule-pp {

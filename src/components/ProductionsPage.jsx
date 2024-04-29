@@ -28,39 +28,42 @@ export default function ProductionsPage() {
             <section className='text-center d-flex flex-column align-items-center'>
                 <img className='banner-mobile' src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
                 <h2 className='h2-pp text-uppercase mt-5 fs-1'>portfolio</h2>
-                <p className='text-intro'>
-                    Voici quelques-unes de mes <br></br>
-                    réalisations.
+                <p className='text-intro-pp'>
+                    Voici quelques-unes de mes réalisations.
                 </p>
                 <div className='blue-stroke-pp border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
             </section>
-            <section className='realisations'>
-                <Realisation 
-                    className="card text-center mb-3 mx-2"
-                    src={freshFood} 
-                    alt="Barquette de légumes."
-                    intitulé="Fresh food" 
-                    description="Réalisation d'un site avec commande en ligne."
-                    language="avec PHP et MySQL"
-                />
-                <Realisation 
-                    className="card text-center mb-3 mx-2"
-                    src={restaurantJaponais}
-                    alt="Sushis et makis."
-                    intitulé="Restaurant Akira" 
-                    description="Réalisation d'un site vitrine."
-                    language="avec WordPress"
-                />
-                <Realisation 
-                    className="card text-center mx-2"
-                    src={espaceBienEtre} 
-                    alt="Tête de bouddah avec une fleur de lotus et pierres empilées flottantes sur l'eau 
-                    sous un coucher de soleil nuageux."
-                    intitulé="Espace bien-être" 
-                    description="Réalisation d'un site vitrine pour un praticien de bien-être."
-                    language="en HTML/CSS"
-                />
-            </section>
+            <div className='container-realisations d-flex justify-content-center'>
+                <div className='center'>
+                    <section className='row realisations grid row-gap-3 column-gap-4'>
+                        <Realisation 
+                            className="col-md-5 card realisation-1 text-center"
+                            src={freshFood} 
+                            alt="Barquette de légumes."
+                            intitulé="Fresh food" 
+                            description="Réalisation d'un site avec commande en ligne."
+                            language="avec PHP et MySQL"
+                        />
+                        <Realisation 
+                            className="col-md-5 card realisation-2 text-center"
+                            src={restaurantJaponais}
+                            alt="Sushis et makis."
+                            intitulé="Restaurant Akira" 
+                            description="Réalisation d'un site vitrine."
+                            language="avec WordPress"
+                        />
+                        <Realisation 
+                            className="col-md-5 card realisation-3 text-center"
+                            src={espaceBienEtre} 
+                            alt="Tête de bouddah avec une fleur de lotus et pierres empilées flottantes sur l'eau 
+                            sous un coucher de soleil nuageux."
+                            intitulé="Espace bien-être" 
+                            description="Réalisation d'un site vitrine pour un praticien de bien-être."
+                            language="en HTML/CSS"
+                        />
+                    </section>
+                </div>
+            </div>
         </main>
     );
 }
