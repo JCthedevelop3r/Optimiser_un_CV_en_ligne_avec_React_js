@@ -24,7 +24,7 @@ function Realisation(props) {
 
 export default function ProductionsPage() {
     return(
-        <main className="container-fluid-md productions-page">
+        <main className="container-fluid-xl productions-page">
             <section className='text-center d-flex flex-column align-items-center'>
                 <img className='banner-mobile' src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
                 <h2 className='h2-pp text-uppercase mt-5 fs-1'>portfolio</h2>
