@@ -42,18 +42,19 @@ p {
     color: #444;
 }
 
-.intro-text {
+.intro-text-cp {
     font-size: 1.25rem;
+    margin: 0 3rem 1rem 3rem;
 }
 
 .blue-stroke-cp {
-    width: 55px;
+    width: 155px;
     padding-bottom: 60px;
 }
 
 .h3-cp {
     color: #1e1e1e;
-    font-size: calc(1.5rem + .6vw) !important;
+    font-size: calc(1.375rem + 1.5vw) !important;
     font-weight: 600;
 }
 

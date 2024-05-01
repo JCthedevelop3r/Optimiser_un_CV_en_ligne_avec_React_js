@@ -36,7 +36,7 @@ export default function BlogPage() {
                 </p>
                 <div className='blue-stroke-bp border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
             </section>
-            <div className='row container-article-blog grid column-gap-1'>
+            <div className='row container-article-blog grid column-gap-4'>
                 <ArticleBlog 
                     className="card article-blog col-md-5 mb-3"
                     src={coder} 
