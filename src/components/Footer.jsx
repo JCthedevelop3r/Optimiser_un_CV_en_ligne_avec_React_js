@@ -79,12 +79,16 @@ export default function Footer() {
         { text: "Se positionner sur Google", page: "/BlogPage", id: "article-blog-3"},
     ];
     return(
-        <footer className='container-fluid-md'>
-            <section className='footer-main-content pt-5 ps-3 pb-4'>
-                <FooterElement sousTitre="John Doe" elements={colonne1} colonne={1}></FooterElement>
-                <FooterElement sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
-                <FooterElement sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>
-                <FooterElement sousTitre="Mes derniers articles" elements={colonne4} showIcon={true}></FooterElement>
+        <footer className='container-fluid-xl'>
+            <section className='footer-main-content pt-5'>
+                <div className='footer-element-1-2'>
+                    <FooterElement sousTitre="John Doe" elements={colonne1} colonne={1}></FooterElement>
+                    <FooterElement sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
+                </div>
+                <div className='footer-element-3-4'>
+                    <FooterElement sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>
+                    <FooterElement sousTitre="Mes derniers articles" elements={colonne4} showIcon={true}></FooterElement>
+                </div>
             </section>
             <section className='copyright text-white text-center py-3 mb-3'>
                 <small>© Designed by John Doe</small>

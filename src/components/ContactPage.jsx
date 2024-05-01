@@ -7,7 +7,7 @@ import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 
 export default function ContactPage() {
     return(
-        <main className="container-fluid-md">
+        <main className="container-fluid-xl">
             <div className="bg-image-cp">
                 <div className='contact-page'>
                     <div className="card mx-3 mt-3">
