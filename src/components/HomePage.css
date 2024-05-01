@@ -36,7 +36,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px)  {
     .bg-image::after {
         content: "";
         display: block;
@@ -49,12 +49,33 @@
         opacity: 0.3;
         z-index: 0;
     }
-}
 
-@media (min-width: 768px) {
     .bg-image {
         height: 1000px;
         background-image: url(../images/img/hero-bg-tablette.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-image::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: 0;
+    }
+
+    .bg-image {
+        height: 700px;
+        background-image: url(../images/img/hero-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -77,14 +98,22 @@
 
 @media (max-width: 767px) {
     .h2-hp {
+        font-size: calc(1.3rem + .6vw) !important;
         font-weight: 600 !important;
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .h2-hp {
         font-weight: 600 !important;
         font-size: calc(1.375rem + 1.5vw) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .h2-hp {
+        font-weight: 600 !important;
+        font-size: calc(1.325rem + 1.1vw) !important;
     }
 }
 
@@ -108,6 +137,12 @@
 @media (min-width: 768px) {
     .texte-a-propos {
         font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .texte-a-propos {
+        font-size: 1rem;
     }
 }
 

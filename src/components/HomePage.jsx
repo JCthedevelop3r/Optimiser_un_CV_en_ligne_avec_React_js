@@ -9,8 +9,8 @@ export default function HomePage() {
             <div className="bg-image d-flex justify-content-center align-items-center">
                 <section className="presentation text-white text-center">
                     <h1 className="titre mb-4">Bonjour, je suis John Doe</h1>
-                    <h2 className="h2-hp fs-3 mb-4">Développeur web full stack</h2>
-                    <a href="#a-propos"><button type="button" className="btn btn-primary px-4">En savoir plus</button></a>
+                    <h2 className="h2-hp mb-4">Développeur web full stack</h2>
+                    <a href="#a-propos"><button type="button" className="btn btn-primary btn-sm px-4">En savoir plus</button></a>
                 </section>
             </div>
             <article className="a-propos pt-5" id="a-propos">
