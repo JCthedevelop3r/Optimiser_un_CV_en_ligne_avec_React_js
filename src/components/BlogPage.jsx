@@ -38,7 +38,7 @@ export default function BlogPage() {
             </section>
             <div className='row container-article-blog grid column-gap-4'>
                 <ArticleBlog 
-                    className="card article-blog col-md-5 mb-3"
+                    className="card article-blog col-md-5 col-lg-3 mb-3"
                     src={coder} 
                     alt="lignes de code HTML." 
                     intitulé="Coder son site en HTML/CSS" 
@@ -48,7 +48,7 @@ export default function BlogPage() {
                     date="22 août 2022"
                 />
                 <ArticleBlog 
-                    className="card article-blog col-md-5 mb-3"
+                    className="card article-blog col-md-5 col-lg-3 mb-3"
                     src={croissance} 
                     alt="Quatre piles de pièces de plus en plus grandes avec un bocal remplit 
                     de pièces encore plus grand." 
@@ -59,7 +59,7 @@ export default function BlogPage() {
                     date="20 août 2022"
                 />
                 <ArticleBlog 
-                    className="card article-blog col-md-5 mb-3"
+                    className="card article-blog col-md-5 col-lg-3 mb-3"
                     src={google}
                     alt="Un ordinateur portable allumé et un smartphone posés sur une table de 
                     pique-nique." 
@@ -70,7 +70,7 @@ export default function BlogPage() {
                     date="1 août 2022"
                 />
                 <ArticleBlog 
-                    className="card article-blog col-md-5 mb-3"
+                    className="card article-blog col-md-5 col-lg-3 mb-3"
                     src={screens} 
                     alt="Un ordinateur de bureau, un ordinateur portable, une tablette et 
                     un clavier d'ordinateur posés sur une table en bois" 
@@ -81,7 +81,7 @@ export default function BlogPage() {
                     date="31 juillet 2022"
                 />
                 <ArticleBlog 
-                    className="card article-blog col-md-5 mb-3"
+                    className="card article-blog col-md-5 col-lg-3 mb-3"
                     src={seo} 
                     alt="Regroupement de mots de couleur blanche sur fond bleu sur le thème
                     du référencement naturel." 
@@ -92,7 +92,7 @@ export default function BlogPage() {
                     date="30 juillet 2022"
                 />
                 <ArticleBlog 
-                    className="card article-blog col-md-5"
+                    className="card article-blog col-md-5 col-lg-3"
                     src={technos}
                     alt="Différents logos de langage informatique, de frameworks et autres
                     logiciels." 

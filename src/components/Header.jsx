@@ -12,7 +12,7 @@ const Header = () => {
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                  <ul class="navbar-nav ps-2 grid gap-3">
+                  <ul class="navbar-nav ps-2">
                     <li class="nav-item">
                       <Link to="/" class="nav-link text-white" aria-current="page">accueil</Link>
                     </li>
