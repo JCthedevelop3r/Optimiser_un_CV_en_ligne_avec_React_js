@@ -37,7 +37,7 @@ export default function ProductionsPage() {
                 <div className='center'>
                     <section className='row realisations grid row-gap-3 column-gap-4'>
                         <Realisation 
-                            className="col-md-5 card realisation-1 text-center"
+                            className="col-md-5 col-lg-3 card realisation-card text-center"
                             src={freshFood} 
                             alt="Barquette de légumes."
                             intitulé="Fresh food" 
@@ -45,7 +45,7 @@ export default function ProductionsPage() {
                             language="avec PHP et MySQL"
                         />
                         <Realisation 
-                            className="col-md-5 card realisation-2 text-center"
+                            className="col-md-5 col-lg-3 card realisation-card text-center"
                             src={restaurantJaponais}
                             alt="Sushis et makis."
                             intitulé="Restaurant Akira" 
@@ -53,7 +53,7 @@ export default function ProductionsPage() {
                             language="avec WordPress"
                         />
                         <Realisation 
-                            className="col-md-5 card realisation-3 text-center"
+                            className="col-md-5 col-lg-3 card realisation-card text-center"
                             src={espaceBienEtre} 
                             alt="Tête de bouddah avec une fleur de lotus et pierres empilées flottantes sur l'eau 
                             sous un coucher de soleil nuageux."
