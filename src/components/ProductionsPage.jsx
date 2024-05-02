@@ -1,7 +1,7 @@
 import './style.css';
 import './ProductionsPage.css';
 
-import bannerMobile from '../images/img/banner-mobile.jpg';
+import ChangeBanner from './ChangeBanner';
 import freshFood from '../images/img/portfolio/fresh-food.jpg';
 import restaurantJaponais from '../images/img/portfolio/restaurant-japonais.jpg';
 import espaceBienEtre from '../images/img/portfolio/espace-bien-etre.jpg'
@@ -26,7 +26,7 @@ export default function ProductionsPage() {
     return(
         <main className="container-fluid-xl productions-page">
             <section className='text-center d-flex flex-column align-items-center'>
-                <img className='banner-mobile' src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
+                <ChangeBanner/>
                 <h2 className='h2-pp text-uppercase mt-5 fs-1'>portfolio</h2>
                 <p className='text-intro-pp'>
                     Voici quelques-unes de mes réalisations.

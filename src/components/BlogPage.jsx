@@ -1,7 +1,7 @@
 import './style.css';
 import './BlogPage.css';
 
-import bannerMobile from '../images/img/banner-mobile.jpg';
+import ChangeBanner from './ChangeBanner';
 import coder from '../images/img/blog/coder.jpg';
 import croissance from '../images/img/blog/croissance.jpg';
 import google from '../images/img/blog/google.jpg';
@@ -29,7 +29,7 @@ export default function BlogPage() {
     return(
         <main className="container-fluid-xl blog-page">
             <section className='text-center d-flex flex-column align-items-center'>
-                <img className='banner-mobile' src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
+                <ChangeBanner/>
                 <h2 className='h2-bp text-uppercase mt-5 fs-1'>blog</h2>
                 <p className='text-intro'>
                     Retrouvez ici quelques articles sur le développement web.

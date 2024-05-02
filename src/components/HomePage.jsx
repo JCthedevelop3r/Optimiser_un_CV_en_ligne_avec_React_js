@@ -18,7 +18,7 @@ export default function HomePage() {
                     <div className="card-body">
                         <div className="row">
                             <section className="col-md-6">
-                                <h3 className="card-title titres titre-a-propos fs-1 pb-2 mb-4 border-bottom border-primary border-2">À propos</h3>
+                                <h3 className="card-title titres titre-a-propos pb-2 mb-4 border-bottom border-primary border-2">À propos</h3>
                                 <p className="card-text texte-a-propos">Passionné par l'informatique et les nouvelles technologies, j'ai suivi une
                                     formation d'<strong>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j'ai pu
                                     acquérir des bases solides pour travailler dans le domaine du <strong>développement
