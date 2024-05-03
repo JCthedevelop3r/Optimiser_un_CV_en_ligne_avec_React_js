@@ -116,7 +116,7 @@ export default function Footer() {
                     <section className='footer-main-content row pt-5'>
                             <FooterElement className="footer-elements col-lg-3" sousTitre="John Doe" elements={colonne1} colonne={1}></FooterElement>
                             <FooterElement className="footer-elements col-lg-3" sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
-                            <FooterElement className="footer-elements col-lg-3" sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>
+                            <FooterElement className="footer-elements col-lg-3" sousTitre="Mes dernières réalisations" elements={colonne3} showIcon={true}></FooterElement>
                             <FooterElement className="footer-elements col-lg-3" sousTitre="Mes derniers articles" elements={colonne4} showIcon={true}></FooterElement>
                     </section>
                     <section className='copyright text-white text-center py-3 mb-3'>
