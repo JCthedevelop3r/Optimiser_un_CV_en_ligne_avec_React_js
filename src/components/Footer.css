@@ -137,8 +137,8 @@ footer .footer-main-content > div:nth-child(n+2) .social-icons {
     width: 100%;
 }
 
-
-
 .copyright {
+    display: block;
+    width: 100%;
     background-color: #1e1e1e;
 }

@@ -35,7 +35,7 @@ export default function ProductionsPage() {
             </section>
             <div className='container-realisations d-flex justify-content-center'>
                 <div className='center'>
-                    <section className='row realisations grid row-gap-3 column-gap-4'>
+                    <div className='row realisations grid row-gap-3 column-gap-4'>
                         <Realisation 
                             className="col-md-5 col-lg-3 card realisation-card text-center"
                             src={freshFood} 
@@ -61,7 +61,7 @@ export default function ProductionsPage() {
                             description="Réalisation d'un site vitrine pour un praticien de bien-être."
                             language="en HTML/CSS"
                         />
-                    </section>
+                    </div>
                 </div>
             </div>
         </main>

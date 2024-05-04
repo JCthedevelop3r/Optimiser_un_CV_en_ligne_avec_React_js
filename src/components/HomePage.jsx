@@ -10,10 +10,10 @@ export default function HomePage() {
                 <section className="presentation text-white text-center">
                     <h1 className="titre mb-4">Bonjour, je suis John Doe</h1>
                     <h2 className="h2-hp mb-4">Développeur web full stack</h2>
-                    <a href="#a-propos"><button type="button" className="btn btn-primary btn-sm px-4">En savoir plus</button></a>
+                    <a className="btn btn-primary btn-sm px-4" href="#a-propos" role="button">En savoir plus</a>
                 </section>
             </div>
-            <article className="a-propos pt-5" id="a-propos">
+            <div className="a-propos pt-5" id="a-propos">
                 <div className="card shadow py-5 px-4">
                     <div className="card-body">
                         <div className="row">
@@ -59,7 +59,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-            </article>
+            </div>
         </main>
     );
 }

@@ -124,10 +124,8 @@ export default function LegalNoticePage() {
                     data-bs-parent="#chapters">
                         <div className='accordion-body'>
                             <h4>Crédits</h4>
-                            <section>
-                                <p>Site développé par John Doe, étudiant du CEF.</p>
-                                <p>Les images libres de droit sont issues du site <a href="https://pixabay.com/fr/" className='text-primary'>Pixabay</a>.</p>
-                            </section>
+                            <p>Site développé par John Doe, étudiant du CEF.</p>
+                            <p>Les images libres de droit sont issues du site <a href="https://pixabay.com/fr/" className='text-primary'>Pixabay</a>.</p>
                         </div>
                     </div>
                 </div>

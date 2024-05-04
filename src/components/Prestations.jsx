@@ -7,8 +7,8 @@ import { faMagnifyingGlassDollar } from '@fortawesome/free-solid-svg-icons';
 
 export default function Prestation() {
   return (
-    <section className="row prestations justify-content-center grid gap-4">
-      <section className="card col-md-3 prestation-1 text-center border-0 rounded-4 shadow-sm">
+    <div className="row prestations justify-content-center grid gap-4">
+      <div className="card col-md-3 prestation-1 text-center border-0 rounded-4 shadow-sm">
         <div className="card-body services-card-content d-flex flex-column align-items-center">
             <FontAwesomeIcon icon={faDisplay} size='2xl' style={{ color: "#0d6efd" }} className="fa-icon"/>
             <h3 className="card-title card-title-p text-uppercase pt-3">ux design</h3>
@@ -17,8 +17,8 @@ export default function Prestation() {
                 Son but est d'offrir une expérience de navigation optimale à l'internaute.
             </p>
         </div>
-      </section>
-      <section className="card col-md-3 prestation-2 text-center border-0 rounded-4 shadow-sm">
+      </div>
+      <div className="card col-md-3 prestation-2 text-center border-0 rounded-4 shadow-sm">
         <div className="card-body services-card-content d-flex flex-column align-items-center">
         <FontAwesomeIcon icon={faFileCode} size='2xl' style={{ color: "#0d6efd" }} className="fa-icon"/>
           <h3 className="card-title card-title-p text-uppercase pt-3">développement web</h3>
@@ -26,8 +26,8 @@ export default function Prestation() {
             Le <strong>développement de sites web</strong> repose sur l'utilisation des languages <span className='underlined'>HTML</span>, <span className='underlined'>CSS</span>, <span className='underlined'>JavaScript</span> et <span className='underlined'>PHP</span>.
           </p>
         </div>
-      </section>
-      <section className="card col-md-3 prestation-3 text-center border-0 rounded-4 shadow-sm">
+      </div>
+      <div className="card col-md-3 prestation-3 text-center border-0 rounded-4 shadow-sm">
         <div className="card-body services-card-content d-flex flex-column align-items-center">
         <FontAwesomeIcon icon={faMagnifyingGlassDollar} size='2xl' style={{ color: "#0d6efd" }} className="fa-icon"/>
           <h3 className="card-title card-title-p text-uppercase pt-3">référencement</h3>
@@ -37,7 +37,7 @@ export default function Prestation() {
             <span className="fst-italic"> améliorer sa position</span> dans les résultats des moteurs de recherche.
           </p>
         </div>
-      </section>
-    </section>
+      </div>
+    </div>
   );
 }
