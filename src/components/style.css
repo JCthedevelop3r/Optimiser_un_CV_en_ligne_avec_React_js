@@ -3,3 +3,11 @@
 * {
     font-family: 'Nunito Sans', 'sans-serif';
 }
+
+a {
+    transition: opacity 0.4s !important;
+}
+
+a:hover {
+    opacity: 0.8 !important;
+}
