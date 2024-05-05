@@ -15,7 +15,7 @@ export default function HomePage() {
             <section>
                 <p>Bonjour, je suis John Doe</p>
                 <h2>Développeur web full stack</h2>
-                <button>En savoir plus</button>
+                <butpathn>En savoir plus</butpathn>
             </section>
             <article>
                 <section>
@@ -43,6 +43,5 @@ export default function HomePage() {
                 </section>
             </article>
         </div>
-        
     );
 }

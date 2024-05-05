@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 function FooterElement(props) {
     return(
@@ -7,7 +7,11 @@ function FooterElement(props) {
             <ul>
                 {props.elements.map((element) => (
                     <li key={element.id}>
-                        <Link to={element.page}>{element.text}</Link>
+                        {element.image ? (
+                            <a href={element.href} target="_blank" rel='noopener noreferrer'><img src={element.image} alt={element.alt} /></a>
+                        ) : (
+                            <Link to={element.page}>{element.text}</Link>
+                        )}
                     </li>
                 ))}
             </ul>
@@ -17,9 +21,13 @@ function FooterElement(props) {
 
 export default function Footer() {
     const colonne1 = [
+        /*Appliquer un "cursor: default" sur les coordonnées de contact en CSS.*/
         { text: "40 Rue Laure Diebold", id: "rue"},
         { text: "69009 Lyon, France", id: "cp-pays"},
-        { text: "Téléphone : 06.20.30.40.50", id: "tel"}
+        { text: "Téléphone : 06.20.30.40.50", id: "tel"},
+        { href:"https://github.com/github-john-doe", image: "#", alt: "Logo de Github.", id: "logo-github"},
+        { href:"https://twitter.com/JohnDoe1410056", image: "#", alt: "Logo de Twitter.", id: "logo-Twitter"},
+        { href:"https://www.linkedin.com/in/john-doe-169a69302/", image: "#", alt: "Logo de Linkedin.", id: "logo-Linkedin"}
     ];
     
     const colonne2 = [
