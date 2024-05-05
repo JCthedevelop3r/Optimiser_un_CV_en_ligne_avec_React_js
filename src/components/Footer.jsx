@@ -45,7 +45,7 @@ function FooterElement(props) {
         ))}
       </ul>
       {/*Permet d'afficher les icones de réseaux sociaux*/}
-      {socialElements.length > 0 && (
+      {props.showSocialIcons && (
         <div className="social-icons">
           <ul>
             {socialElements.map((element) => (
@@ -81,7 +81,7 @@ export default function Footer() {
     };
   }, []);
 
-  useEffect(() => {
+  /*useEffect(() => {
     //Permet de supprimer les '.social-icons' des colonnes 2, 3 et 4 du DOM
     const socialIcons = document.querySelectorAll(".social-icons");
 
@@ -90,7 +90,7 @@ export default function Footer() {
         icon.remove();
       }
     });
-  }, []);
+  }, []);*/
 
   const colonne1 = [
     { text: "40 Rue Laure Diebold", id: "rue" },
@@ -178,6 +178,7 @@ export default function Footer() {
                 sousTitre="John Doe"
                 elements={colonne1}
                 colonne={1}
+                showSocialIcons={true}
               ></FooterElement>
               <FooterElement
                 className="footer-elements"
@@ -213,6 +214,7 @@ export default function Footer() {
               sousTitre="John Doe"
               elements={colonne1}
               colonne={1}
+              showSocialIcons={true}
             ></FooterElement>
             <FooterElement
               className="footer-elements col-lg-3"
