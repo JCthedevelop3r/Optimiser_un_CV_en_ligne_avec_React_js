@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.bg-image-cp > * {
+.bg-image-cp>* {
     position: relative;
     z-index: 10;
 }
@@ -46,6 +46,7 @@ p {
     font-size: 1.25rem;
     margin: 0 3rem 1rem 3rem;
 }
+
 @media (max-width: 767px) {
     .blue-stroke-cp {
         width: 76px;
@@ -112,37 +113,37 @@ textarea {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 424px ) {
+@media screen and (min-width: 375px) and (max-width: 424px) {
     .iframe-cp {
         width: 245px;
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 767px ) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
     .iframe-cp {
         width: 295px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px ) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .iframe-cp {
         width: 307px;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1023px ) {
+@media screen and (min-width: 992px) and (max-width: 1023px) {
     .iframe-cp {
         width: 419px;
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1199px ) {
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
     .iframe-cp {
         width: 435px;
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1439px ) {
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
     .iframe-cp {
         width: 523px;
     }
