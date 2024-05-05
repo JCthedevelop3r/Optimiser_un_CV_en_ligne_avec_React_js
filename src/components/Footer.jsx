@@ -81,17 +81,6 @@ export default function Footer() {
     };
   }, []);
 
-  /*useEffect(() => {
-    //Permet de supprimer les '.social-icons' des colonnes 2, 3 et 4 du DOM
-    const socialIcons = document.querySelectorAll(".social-icons");
-
-    socialIcons.forEach((icon, index) => {
-      if (index === 1 || index === 2 || index === 3) {
-        icon.remove();
-      }
-    });
-  }, []);*/
-
   const colonne1 = [
     { text: "40 Rue Laure Diebold", id: "rue" },
     { text: "69009 Lyon, France", id: "cp-pays" },
