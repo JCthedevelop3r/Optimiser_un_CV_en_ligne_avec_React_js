@@ -1,51 +1,52 @@
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .services-page {
-    padding-top: 25px;
-    padding-bottom: 100px;
-    background-color: #F8F9FB;
+        padding-top: 25px;
+        padding-bottom: 100px;
+        background-color: #F8F9FB;
     }
 }
 
 @media (min-width: 768px) {
     .services-page {
-    padding-top: 25px;
-    padding-bottom: 100px;
-    background-color: #F8F9FB;
-    }
-}
-     
-p {
-    color:#444;
-}
-     
-.banner {
-    width: 100%; 
-}
-     
-@media (max-width: 767px) {
-    .h2-sp {
-    font-weight: 600;
-    color: #1e1e1e;
-    margin-top: 3rem;
+        padding-top: 25px;
+        padding-bottom: 100px;
+        background-color: #F8F9FB;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+p {
+    color: #444;
+}
+
+.banner {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
     .h2-sp {
-    font-weight: 600;
-    color: #1e1e1e;
-    margin-top: 1.5rem !important;
+        font-weight: 600;
+        color: #1e1e1e;
+        margin-top: 3rem;
     }
 }
-   
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .h2-sp {
+        font-weight: 600;
+        color: #1e1e1e;
+        margin-top: 1.5rem !important;
+    }
+}
+
 @media (min-width: 992px) {
     .h2-sp {
-    font-weight: 600;
-    color: #1e1e1e;
-    margin-top: 3rem;
+        font-weight: 600;
+        color: #1e1e1e;
+        margin-top: 3rem;
     }
 }
-.text-intro{
+
+.text-intro {
     font-size: 1.1rem;
     font-weight: 400;
 }
@@ -54,11 +55,11 @@ p {
     width: 76px;
     padding-bottom: 100px;
 }
-    
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .blue-stroke-sp {
-    width: 150px;
-    padding-bottom: 100px;
+        width: 150px;
+        padding-bottom: 100px;
     }
 }
 

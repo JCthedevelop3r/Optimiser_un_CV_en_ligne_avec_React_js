@@ -23,10 +23,10 @@
 }
 
 p {
-    color:#444;
+    color: #444;
 }
 
-.text-intro-pp{
+.text-intro-pp {
     font-size: 1.1rem;
     font-weight: 400;
     padding: 0 2rem 0 2rem;
@@ -52,6 +52,7 @@ p {
         padding-bottom: 60px;
     }
 }
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .container-realisations {
         width: 100%;

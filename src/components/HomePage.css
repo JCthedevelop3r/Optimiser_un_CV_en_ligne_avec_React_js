@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.bg-image > * {
+.bg-image>* {
     position: relative;
     z-index: 10;
 }
@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px)  {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .bg-image::after {
         content: "";
         display: block;
@@ -125,7 +125,7 @@
 }
 
 @media (min-width: 768px) {
-    .a-propos > .card {
+    .a-propos>.card {
         padding: 1.25rem 2rem 3rem 2rem !important;
     }
 }

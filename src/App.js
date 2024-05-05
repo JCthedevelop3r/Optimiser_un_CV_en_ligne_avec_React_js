@@ -12,8 +12,20 @@ import ContactPage from "./components/ContactPage";
 import LegalNoticePage from "./components/LegalNoticePage";
 import HomePage from "./components/HomePage";
 import TopButton from "./components/TopButton";
+import JohnDoeProfile from "./components/JohnDoeProfile";
 
 function App() {
+
+  // Permet de supprimer l'attribut "type" de la balise <style> du DOM
+  // jugé comme devant être ommit car non-nécessaire
+  useEffect(() => {
+    const styleElement = document.querySelector('style');
+
+    if (styleElement) {
+      styleElement.removeAttribute('type');
+    }
+  }, []);
+
   /*Permet de faire apparaître le bouton "retour en haut" lorsqu'on se trouve tout en bas de la page */
   const [showTopButton, setShowTopButton] = useState(false);
   const location = useLocation();
@@ -43,6 +55,7 @@ function App() {
           <Route path="/BlogPage" element={<BlogPage/>}></Route>
           <Route path="/ContactPage" element={<ContactPage/>}></Route>
           <Route path="/LegalNoticePage" element={<LegalNoticePage/>}></Route>
+          <Route path="/JohnDoeProfilePage" element={<JohnDoeProfile/>}></Route>
         </Routes>
         {showTopButton && <TopButton />}
         <Footer/>

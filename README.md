@@ -1,3 +1,11 @@
+# Prerequisites of the project
+
+The prerequisites of the projects are to know the following programming languages : HTML5, CSS3, JavaScript(ES6); and the following libraries and frameworks : React.js(18.2.0) and Bootstrap(5.3.3).
+
+# Installation instructions
+
+To install this project you should first install an IDE like Virtual Studio Code and Node.js who includes the package manager npm.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
