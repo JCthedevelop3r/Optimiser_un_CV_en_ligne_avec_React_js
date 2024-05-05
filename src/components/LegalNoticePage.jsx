@@ -47,7 +47,7 @@ export default function LegalNoticePage() {
                 <h2 className="h2-lnp text-uppercase mt-4 fs-1">mentions légales</h2>
                 <div className='blue-stroke-lnp border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
             </section>
-            <div className='accordion pb-4 mx-2' id='chapters'>
+            <div className='accordion pb-4' id='chapters'>
                 <div className='accordion-item'>
                     <h3 className='accordion-header' id='heading-1'>
                         <button className='accordion-button' type='button' data-bs-toggle='collapse' 
@@ -65,7 +65,8 @@ export default function LegalNoticePage() {
                                     <FontAwesomeIcon icon={faLocationDot} style={{color: "black", paddingRight: "4px"}}/>
                                 </span>
                                 <address className='m-0'>
-                                    <p className='m-0'>40 Rue Laure Diebold 69009 Lyon, France</p>
+                                    <p className='m-0'>40 Rue Laure Diebold <br></br>
+                                    69009 Lyon, France</p>
                                 </address>
                             </div>
                             <div className='d-flex'>

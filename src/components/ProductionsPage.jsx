@@ -1,7 +1,7 @@
 import './style.css';
 import './ProductionsPage.css';
 
-import bannerMobile from '../images/img/banner-mobile.jpg';
+import ChangeBanner from './ChangeBanner';
 import freshFood from '../images/img/portfolio/fresh-food.jpg';
 import restaurantJaponais from '../images/img/portfolio/restaurant-japonais.jpg';
 import espaceBienEtre from '../images/img/portfolio/espace-bien-etre.jpg'
@@ -24,43 +24,46 @@ function Realisation(props) {
 
 export default function ProductionsPage() {
     return(
-        <main className="container-fluid-md productions-page">
+        <main className="container-fluid-xl productions-page">
             <section className='text-center d-flex flex-column align-items-center'>
-                <img className='banner-mobile' src={bannerMobile} alt="Rayons lumineux qui se croisent sur fond bleu" />
+                <ChangeBanner/>
                 <h2 className='h2-pp text-uppercase mt-5 fs-1'>portfolio</h2>
-                <p className='text-intro'>
-                    Voici quelques-unes de mes <br></br>
-                    réalisations.
+                <p className='text-intro-pp'>
+                    Voici quelques-unes de mes réalisations.
                 </p>
                 <div className='blue-stroke-pp border border-top border-start-0 border-end-0 border-bottom-0 border-4 border-primary'></div>
             </section>
-            <section className='realisations'>
-                <Realisation 
-                    className="card text-center mb-3 mx-2"
-                    src={freshFood} 
-                    alt="Barquette de légumes."
-                    intitulé="Fresh food" 
-                    description="Réalisation d'un site avec commande en ligne."
-                    language="avec PHP et MySQL"
-                />
-                <Realisation 
-                    className="card text-center mb-3 mx-2"
-                    src={restaurantJaponais}
-                    alt="Sushis et makis."
-                    intitulé="Restaurant Akira" 
-                    description="Réalisation d'un site vitrine."
-                    language="avec WordPress"
-                />
-                <Realisation 
-                    className="card text-center mx-2"
-                    src={espaceBienEtre} 
-                    alt="Tête de bouddah avec une fleur de lotus et pierres empilées flottantes sur l'eau 
-                    sous un coucher de soleil nuageux."
-                    intitulé="Espace bien-être" 
-                    description="Réalisation d'un site vitrine pour un praticien de bien-être."
-                    language="en HTML/CSS"
-                />
-            </section>
+            <div className='container-realisations d-flex justify-content-center'>
+                <div className='center'>
+                    <section className='row realisations grid row-gap-3 column-gap-4'>
+                        <Realisation 
+                            className="col-md-5 col-lg-3 card realisation-card text-center"
+                            src={freshFood} 
+                            alt="Barquette de légumes."
+                            intitulé="Fresh food" 
+                            description="Réalisation d'un site avec commande en ligne."
+                            language="avec PHP et MySQL"
+                        />
+                        <Realisation 
+                            className="col-md-5 col-lg-3 card realisation-card text-center"
+                            src={restaurantJaponais}
+                            alt="Sushis et makis."
+                            intitulé="Restaurant Akira" 
+                            description="Réalisation d'un site vitrine."
+                            language="avec WordPress"
+                        />
+                        <Realisation 
+                            className="col-md-5 col-lg-3 card realisation-card text-center"
+                            src={espaceBienEtre} 
+                            alt="Tête de bouddah avec une fleur de lotus et pierres empilées flottantes sur l'eau 
+                            sous un coucher de soleil nuageux."
+                            intitulé="Espace bien-être" 
+                            description="Réalisation d'un site vitrine pour un praticien de bien-être."
+                            language="en HTML/CSS"
+                        />
+                    </section>
+                </div>
+            </div>
         </main>
     );
 }

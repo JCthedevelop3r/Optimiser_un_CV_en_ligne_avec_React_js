@@ -1,3 +1,4 @@
+import { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import "./Footer.css";
 import "./style.css";
@@ -13,9 +14,9 @@ function FooterElement(props) {
     const socialElements = props.elements.slice(-3);
 
     return(
-        <div className='footer-elements'>
-            <h2>{props.sousTitre}</h2>
-            <ul>
+        <div className={props.className}>
+            <h2 className='h2-footer'>{props.sousTitre}</h2>
+            <ul className='ul-footer'>
                 {/*Permet de créer plusieurs éléments de liste*/}
                 {props.elements.map((element, index) => (
                     <li key={element.id}>
@@ -49,8 +50,21 @@ function FooterElement(props) {
 }
 
 export default function Footer() {
+    // Permet de suivre dynamiquement la viewport width
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setViewportWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const colonne1 = [
-        /*Appliquer un "cursor: default" sur les coordonnées de contact en CSS.*/
         { text: "40 Rue Laure Diebold", id: "rue"},
         { text: "69009 Lyon, France", id: "cp-pays"},
         { text: "Téléphone : 06.20.30.40.50", id: "tel"},
@@ -79,16 +93,37 @@ export default function Footer() {
         { text: "Se positionner sur Google", page: "/BlogPage", id: "article-blog-3"},
     ];
     return(
-        <footer className='container-fluid-md'>
-            <section className='footer-main-content pt-5 ps-3 pb-4'>
-                <FooterElement sousTitre="John Doe" elements={colonne1} colonne={1}></FooterElement>
-                <FooterElement sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
-                <FooterElement sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>
-                <FooterElement sousTitre="Mes derniers articles" elements={colonne4} showIcon={true}></FooterElement>
-            </section>
-            <section className='copyright text-white text-center py-3 mb-3'>
-                <small>© Designed by John Doe</small>
-            </section>
+        <footer className='container-fluid-xl'>
+            {(viewportWidth < 992) ? (
+                <>
+                    <section className='footer-main-content row pt-5'>
+                        <div className='footer-element-1-2 col-lg-5'>
+                            <FooterElement className="footer-elements" sousTitre="John Doe" elements={colonne1} colonne={1}></FooterElement>
+                            <FooterElement className="footer-elements" sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
+                        </div>
+                        <div className='footer-element-3-4 col-lg-5'>
+                            <FooterElement className="footer-elements" sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>
+                            <FooterElement className="footer-elements" sousTitre="Mes derniers articles" elements={colonne4} showIcon={true}></FooterElement>
+                        </div>
+                    </section>
+                    <section className='copyright text-white text-center py-3 mb-3'>
+                        <small>© Designed by John Doe</small>
+                    </section>
+                
+                </>
+            ) : (
+                <>
+                    <section className='footer-main-content row pt-5'>
+                            <FooterElement className="footer-elements col-lg-3" sousTitre="John Doe" elements={colonne1} colonne={1}></FooterElement>
+                            <FooterElement className="footer-elements col-lg-3" sousTitre="Liens utiles" elements={colonne2} showIcon={true}></FooterElement>
+                            <FooterElement className="footer-elements col-lg-3" sousTitre="Mes dernières réalistions" elements={colonne3} showIcon={true}></FooterElement>
+                            <FooterElement className="footer-elements col-lg-3" sousTitre="Mes derniers articles" elements={colonne4} showIcon={true}></FooterElement>
+                    </section>
+                    <section className='copyright text-white text-center py-3 mb-3'>
+                        <small>© Designed by John Doe</small>
+                    </section>
+                </>
+            )}
         </footer>
     );
 }
