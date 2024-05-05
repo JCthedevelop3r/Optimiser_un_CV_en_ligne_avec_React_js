@@ -15,10 +15,10 @@ export default function HomePage() {
             <section>
                 <p>Bonjour, je suis John Doe</p>
                 <h2>Développeur web full stack</h2>
-                <butpathn>En savoir plus</butpathn>
+                <a href="#a-propos"><button>En savoir plus</button></a>
             </section>
             <article>
-                <section>
+                <section id="a-propos">
                     <h3>À propos</h3>
                     <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une
                         formation d'intégrateur web au CEF. Au cours de cette formation, j'ai pu
