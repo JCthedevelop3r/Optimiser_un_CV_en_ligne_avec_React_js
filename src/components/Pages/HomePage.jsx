@@ -11,7 +11,7 @@ function Competences(props) {
 
 export default function HomePage() {
     return(
-        <div className="HomePage">
+        <div className="home-page">
             <section>
                 <p>Bonjour, je suis John Doe</p>
                 <h2>Développeur web full stack</h2>
